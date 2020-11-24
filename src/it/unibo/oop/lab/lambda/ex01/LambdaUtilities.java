@@ -89,7 +89,7 @@ public final class LambdaUtilities {
         list.forEach(t -> m.merge(op.apply(t), new HashSet<>(Arrays.asList(t)), (a, b) -> {
             a.addAll(b);
             return a;
-            }));
+        }));
         return m;
     }
 
